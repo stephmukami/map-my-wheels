@@ -5,6 +5,7 @@ import './App.css'
 import Body from './components/Body';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import MapBody from './components/MapBody';
 
 
 
@@ -13,7 +14,7 @@ function App() {
 return(
   <>
   <Navbar/>
-  <Body/>
+  <MapBody/>
   <Footer/>
   </>
 )

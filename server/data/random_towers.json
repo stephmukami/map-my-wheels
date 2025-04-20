@@ -1,0 +1,90 @@
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Alpha",
+        "status": "ACTIVE",
+        "signalStrength": -65,
+        "networkProvider": "Safaricom",
+        "lastMaintenanceDate": "2025-01-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.9021, -1.2984]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Bravo",
+        "status": "INACTIVE",
+        "signalStrength": -90,
+        "networkProvider": "Airtel",
+        "lastMaintenanceDate": "2024-12-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8456, -1.2789]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Charlie",
+        "status": "ACTIVE",
+        "signalStrength": -70,
+        "networkProvider": "Telkom",
+        "lastMaintenanceDate": "2025-02-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8112, -1.2845]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Delta",
+        "status": "ACTIVE",
+        "signalStrength": -60,
+        "networkProvider": "Safaricom",
+        "lastMaintenanceDate": "2025-01-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8354, -1.3098]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Echo",
+        "status": "ACTIVE",
+        "signalStrength": -68,
+        "networkProvider": "Airtel",
+        "lastMaintenanceDate": "2025-03-05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8572, -1.2912]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cellTowerName": "Tower Foxtrot",
+        "status": "ACTIVE",
+        "signalStrength": -72,
+        "networkProvider": "Telkom",
+        "lastMaintenanceDate": "2025-01-30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8998, -1.2756]
+      }
+    }
+  ]
+}

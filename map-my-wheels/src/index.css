@@ -1,0 +1,64 @@
+
+
+.mapboxgl-popup {
+  max-width: 1200px !important;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden !important;
+  background: white !important;
+}
+
+.mapboxgl-popup-close-button {
+  display: block !important; 
+  font-size: 24px !important; 
+  padding: 8px 12px !important; 
+  color: #666 !important; 
+  background: transparent !important;
+  border: none !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  color: #333 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.rdt_TableHeader
+{
+  font-weight: bolder;
+  font-size: large;
+}
+.rdt_TableHead{
+  font-weight: bolder;
+  font-size: large;
+}
+.rdt_TableHeadRow{
+  font-weight: bolder;
+  font-size: large;
+}
+.pop-style{
+  font-family: "InstrumentSans", sans-serif;
+  font-size: medium;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  padding: 1.5rem !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sentence-case {
+  text-transform: capitalize !important;
+}
+
+.sentencecase {
+  text-transform: capitalize;
+}
+th:hover {
+  background-color: #F5F5F5!important; /* Green-600 */
+}

@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *)); 
+
+
+@custom-variant light (&:where(.light, .light *)); 
+
+
+@font-face {
+    font-family: "font";
+    display: swap;
+    src: url("/instrument-sans-v1-latin-regular.woff2");
+}
+
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+
+  --color-brand-blue: #0D99FF;
+  --color-hover-blue: #0072CC;
+  --color-brand-grey:#F6F8FC;
+  --color-brand-blue-dark: #0C8AE6; 
+  --color-brand-hub-red:#e57e63;
+  --color-brand-hub-green:#5ea855;
+  --color-brand-green:#03B155;
+  --color-green-hover:#029148;
+  --color-input-grey:#F3F3F3;
+  --color-auth-background:#F7F8FC;
+  --color-black-hover:#222;
+  --color-table-grey:#F7F8FC;
+  --color-main-white:#fff;
+
+
+  
+  --color-dark-bg-main:#161618;
+  --color-dark-bg-secondary:#29282B;
+  --color-dark-bg-feat:#3B3B3D;
+  --color-dark-text: #fff;
+  --color-dark-bg-hoover:#1D1D1F;
+
+  /* figure out the hover color */
+
+
+  --color-vehicle-table:#F1F7FA;
+
+
+
+  --color-brand-hub-amber:#f7a539;
+  --color-brand-hub-grey:#808080;
+
+
+  
+  --color-brand-ENROUTE: #911B8D;
+  --color-brand-ONTRIP:#10BB67;
+  --color-brand-OFFLINE: #F79B39; 
+  --color-brand-ONLINE:#4D59C1;
+  --color-brand-GRAY:#95A5A6;
+
+  
+
+
+
+  --font-sans: "font", sans-serif;
+
+  --breakpoint-mdx: 900px;
+
+
+
+}
+
+.dark-mode{
+  --color-dark-bg-main:#161618;
+  --color-dark-bg-secondary:#29282B;
+  --color-dark-bg-feat:#3B3B3D;
+  --color-dark-bg-hoover:#1A1A1D;
+
+  --color-dark-text: #fff;
+}
+
+.light{
+--light-bg-main:#fff;
+--light-bg-hover:#F6F8FC;
+--light-text:#000;
+}
+
+.rounded-table {
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate; /* Ensures corners are properly rounded */
+  border-spacing: 0;
+}
+
+.rounded-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.rounded-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.rounded-table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.rounded-table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.fade-in-right {
+	-webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #03B155;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+  
+.map-loader {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #03B155;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+.mapboxgl-popup {
+  max-width: 1200px !important;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden !important;
+  background: white !important;
+}
+
+.mapboxgl-popup-close-button {
+  display: block !important; 
+  font-size: 24px !important; 
+  padding: 8px 12px !important; 
+  color: #666 !important; 
+  background: transparent !important;
+  border: none !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  color: #333 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.rdt_TableHeader
+{
+  font-weight: bolder;
+  font-size: large;
+}
+.rdt_TableHead{
+  font-weight: bolder;
+  font-size: large;
+}
+.rdt_TableHeadRow{
+  font-weight: bolder;
+  font-size: large;
+}
+.pop-style{
+  font-family: "InstrumentSans", sans-serif;
+  font-size: medium;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  padding: 1.5rem !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sentence-case {
+  text-transform: capitalize !important;
+}
+
+.sentencecase {
+  text-transform: capitalize;
+}
+th:hover {
+  background-color: #F5F5F5!important; /* Green-600 */
+}
+
+.quick_metrics{
+  backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(133, 128, 128, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.tracker-summaries {
+/* From https://css.glass */
+background: rgba(72, 170, 65, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(72, 170, 65, 0.3);
+}
+
+.bounce-in-right {
+	-webkit-animation: bounce-in-right 1.4s both;
+	        animation: bounce-in-right 1.4s both;
+}
